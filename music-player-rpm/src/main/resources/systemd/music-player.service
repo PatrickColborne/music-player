@@ -1,0 +1,9 @@
+[Unit]
+Description=music-player
+After=syslog.target
+[Service]
+User=music-player
+ExecStart=/var/music-player/music-player-app.jar
+SuccessExitStatus=143
+[Install]
+WantedBy=multi-user.target
